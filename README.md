@@ -6,7 +6,7 @@ The base LaTeX template is from [Sourabh Bajaj](https://github.com/sb2nov/resume
 The LaTeX environment docker file is from [thomasleplus](https://hub.docker.com/r/thomasleplus/latex).
 
 # Preview
-![alt text](Kezhen_Xu_Resume.jpg)
+![resume preview](Kezhen_Xu_Resume.png)
 
 # Ways to convert LaTeX to PDF
 1. Using Github Action (recommand)
@@ -14,6 +14,8 @@ The LaTeX environment docker file is from [thomasleplus](https://hub.docker.com/
 
 ## 1. Using Github Action (recommand)
 Each time you make a push to the Github, the github action will automatically convert your resume.tex file to a PDF file using around 2 minutes. You can directly download your resume from that action, under the artifact.
+
+![Github Action](github_action.png)
 
 If you change the name of the LaTeX file, you also need to change it in the [resume2pdf.yml](/.github/workflows/resume2pdf.yml) file under .github folder.
 
@@ -35,7 +37,6 @@ This environment is a simplified version with less compatibility, but should be 
 ```sh
 docker build -t latex .
 ```
-
 
 ## 2.2 Transform LaTeX to PDF
 ### Windows (PowerShell)
