@@ -1,0 +1,225 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectSubheading}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://kreal.me/}{\Large Kezhen (Kason) Xu}}   & Email : \href{mailto:kezhen\_xu@hotmail.com}{kezhen\_xu@hotmail.com}\\
+  \href{http://kreal.me/}{Personal Website} \textbar \thinspace \thinspace \href{https://www.linkedin.com/in/kezhen-xu/}{LinkedIn} \textbar \thinspace \thinspace \href{https://github.com/Kreal321/}{Github} & Mobile : +1-614-980-1990 \\
+  
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Ohio State University (OSU)}{Columbus, OH}
+      {Bachelor of Engineering in Computer Science;  GPA: 3.93}{Jan. 2020 -- Aug. 2022}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Clinical Skills Education and Assessment Center \textbar \thinspace \thinspace OSU}{Columbus, OH}
+      {Web Application Developer}{Jan 2022 - May 2022}
+      \resumeItemListStart
+        \resumeItem{Raspberry Pi Server}
+          {Designed and developed a light server running on the Raspberry Pi to control simulation equipment. Utilized multi-threading to separate front-end interaction and business logic.}
+        \resumeItem{Web Interface}
+          {Designed a user-friendly web interface to interact with nonprofessionals. Developed a customizable task queue with drag and drop features to enrich user scenarios and minimize user restrictions.}
+        \resumeItem{Technologies Used}
+          {Javascript, Python, HTML/CSS, Socket, JSON}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Microsystems and Nanosystems Laboratory \textbar \thinspace \thinspace OSU}{Columbus, OH}
+      {Research Assistant}{May 2021 - Mar 2022}
+      \resumeItemListStart
+        \resumeItem{Data Processing}
+          {Resolved a cumbersome manual training data preparation issue by designing and implementing an automated process that labels cells (ROIs) with an error of less than 3\%.}
+        \resumeItem{Training Models}
+          {Obtained the most suitable AI model by researching object detection model papers. Trained the optimal model by adjusting the combination of training data and model parameters.}
+        \resumeItem{Applying AI Model}
+          {Designed a program for specific cell recognition and classification.}
+        \resumeItem{Technologies Used}
+          {YOLOv4, OpenCV, Python, ImageJ, NumPy}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Department of Computer Science and Engineering \textbar \thinspace \thinspace OSU}{Columbus, OH}
+      {Teaching Assistant}{Jan 2022 - Aug 2022}
+      \resumeItemListStart
+        \resumeItem{Assist Students}
+          {Assisted over 400 students by holding office hours and review sessions. Created a comfortable, friendly atmosphere for students, which encouraged and facilitated group study.}
+        \resumeItem{Assist Professors}
+          {Assisted course instructor with class preparation and course materials and introduced students to study strategies to ensure academic success.}
+        \resumeItem{Technologies Used}
+          {Code Review, Java, Javascript, HTML/CSS, Ruby, Ruby On Rails, Git}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Technical Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectSubheading
+      {Qidian Information Exchange Board Website}{Aug 2020 - Oct 2021}
+        \resumeItemListStart
+          \resumeItem{Content}
+            {Built and provided a platform where readers can share rebate links. The website checks link validity and stores rebate information for the convenience of readers, averaged 300 pageviews per day.}
+          \resumeItem{Technologies Used}
+            {Java, Spring Boot, Javascript, Restful API, MySQL, HTML/CSS, JSON, Regular Expression}
+        \resumeItemListEnd
+
+    \resumeProjectSubheading
+      {Youtube Comments to Images Website}{Jun 2020 - Jul 2020}
+        \resumeItemListStart
+          \resumeItem{Content}
+          {Built and provided a website that exports the youtube video comments into canvases. Users can customize the style of the canvas and download all the pictures they want as a zip file for video editors.}
+        \resumeItem{Technologies Used}
+          {Javascript, Canvas, HTML/CSS, Restful API, Bootstrap, Oracle}
+        \resumeItemListEnd
+
+    \resumeProjectSubheading
+      {Buckeye Roommates}{May 2021 - Aug 2021}
+        \resumeItemListStart
+          \resumeItem{Content}
+            {Designed a full-stack website that caters to those interested in finding roommates.}
+          \resumeItem{Technologies Used}
+            {Ruby on rails, Ruby, Javascript, HTML/CSS, YAML, MVC, Devise, Bootstrap}
+        \resumeItemListEnd
+
+    \resumeProjectSubheading
+      {Easy Sublet Android App}{Jan 2022 - May 2022}
+        \resumeItemListStart
+          \resumeItem{Content}
+            {Designed an Android App that helps end-users to sublease their places when needed.}
+          \resumeItem{Technologies Used}
+            {Android Studio, Java, MVVM, XML, Firebase}
+        \resumeItemListEnd
+
+    \resumeSubItem{Cat Food Calculator}
+      {Designed a website to guide cat owners make homemade cat food.}
+
+    \resumeSubItem{Wechat Group Bot}
+      {Designed a bot to assist Wechat group owners manage their groups.}
+
+    \resumeSubItem{Compiler}
+      {Designed a language compiler with the help of JFlex and CUP based on Java.}
+  \resumeSubHeadingListEnd
+
+
+% --------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Java, Javascript, SQL, Python, Ruby}
+     \hfill
+     \textbf{Technologies}{: Spring Boot, Restful API, Oracle, Docker}
+   }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
