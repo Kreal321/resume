@@ -1,0 +1,27 @@
+name: Convert LaTeX to PDF file
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Pull the latest Docker image
+      run:  docker pull kreal321/latex:stable
+
+    - uses: actions/checkout@v4
+    - name: Convert pdf file
+      run:  docker run --rm -t --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" kreal321/latex:amd64 latexmk -outdir=/tmp -f -pdf Kezhen_Xu_Resume.tex
+      
+    - name: Upload PDF to the workflow tab
+      uses: actions/upload-artifact@v2
+      with:
+        name: resume
+        path: Kezhen_Xu_Resume.pdf
+

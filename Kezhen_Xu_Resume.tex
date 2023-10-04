@@ -1,0 +1,192 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}#2 \vspace{-2pt}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectSubheading}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://kreal321.github.io/blog/about-me/}{\Large Kezhen (Kason) Xu}}   & Email: \href{mailto:kezhen\_xu@hotmail.com}{kezhen\_xu@hotmail.com}\\
+  \href{https://kreal321.github.io/blog/about-me/}{Personal Website} \textbar \thinspace \thinspace \href{https://www.linkedin.com/in/kezhen-xu/}{LinkedIn} \textbar \thinspace \thinspace \href{https://github.com/Kreal321/}{Github} & Mobile : +1-614-980-1990 \\
+  
+\end{tabular*}
+
+%-----------Summary-----------------
+\section{Summary}
+  \resumeSubHeadingListStart
+  \item{
+    {Highly skilled Java/J2EE Full Stack Developer with 2.5 years of professional experience and over 7 years of
+    experience in programming with diversified exposure in all the phases of the Software Development Life Cycle
+    using Spring Framwork, Angular, Hibernate ORM, Messaging, Relational and NoSQL databases,
+    Microservices architecture, AWS services as well as testing and maintaining enterprise-level web applications.
+    Excellent problem-solving skills and a strong ability to work collaboratively in an agile team environment.}
+  }
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Ohio State University (OSU)}{Columbus, OH}
+      {Bachelor of Engineering in Computer Science;  GPA: 3.93}{Jan. 2020 -- Aug. 2022}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {Beaconfire Inc.}{East Windsor, NJ}
+    {Java Full Stack Developer}{Aug 2022 - Present}
+    \resumeItemListStart
+      \resumeItem{}
+        {Simplified the codebase by converting an \textbf{XML based Spring} app to a auto-configured \textbf{Spring Boot} app with \textbf{Hibernate}, \textbf{Spring AOP}, and \textbf{Spring Security (JWT)} integration, resulting in a \textbf{50\%} reduction in future maintenance and expansion challenges.}
+      \resumeItem{}
+        {Structured \textbf{RESTful API} endpoints with versioning for consistency across frontend \textbf{Angular} services and backend \textbf{Spring} controllers, while also implementing security measures like \textbf{Angular Auth Guards} and \textbf{Spring Security} for endpoint protection.}
+      \resumeItem{}
+        {Skillfully converted a \textbf{Monolithic} application into a \textbf{Microservices architecture} with \textbf{Netflix Eureka}, \textbf{Feign Client} for inter-service communication, and \textbf{RabbitMQ} for asynchronous \textbf{message} delivery, achieving over \textbf{50\%} performance enhancement and reducing the average response time from \textbf{2.4} seconds to an impressive \textbf{0.6 seconds}}
+      \resumeItem{}
+        {Strengthened unit \textbf{testing} using \textbf{JUnit} and \textbf{Mockito}, refined documentation and standardized \textbf{CI/CD procedures} by \textbf{Gitlab CI}, which drastically lowered change failure rates to under \textbf{6\%}, ensuring smoother development and deployment.}
+      \resumeItem{}
+        {Collaborated with cross-functional teams and worked in a \textbf{client-facing Agile} team to gather requirements and deliver software solutions on time and within budget, achieving a success rate of \textbf{95\%}.}
+      \resumeItem{Technologies Used}
+        {: Java 8, Spring Framework (MVC, AOP, JPA, Security), Angular, RabbitMQ, Microservices, Netflix Eureka and Feign Client, AWS (RDS, S3, EC2, Lambda, EKS), Docker, Gitlab CI, JUnit, Mockito, Maven, MySQL, MongoDB, Redis, Jira, Confluence, Agile, Scrum}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Clinical Skills Education and Assessment Center \textbar \thinspace \thinspace OSU}{Columbus, OH}
+      {Web Application Developer}{Jan 2022 - May 2022}
+      \resumeItemListStart
+        \resumeItem{}
+          {Led a team of \textbf{4} in utilizing \textbf{Angular} with \textbf{Material Design} to build a user-friendly web interface that catered to non-professionals.}
+        \resumeItem{}
+          {Developed a customizable task queue with \textbf{drag-and-drop} features to enhance user scenarios and minimize user restrictions, resulting in an enriched and intuitive user experience.}
+        \resumeItem{}
+          {Created a Raspberry Pi based server for simulation equipment control, using \textbf{WebSocket} for long term frontend-backend communication.}
+        \resumeItem{Technologies Used}
+          {: Angular, TypeScript, Python, HTML/CSS, WebSocket, Bootstrap 5, Material Design}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Technical Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectSubheading
+      {Qidian Rebate Information Exchange Board}{Dec 2019 - Oct 2021}
+        \resumeItemListStart
+          \resumeItem{}
+            {Developed and maintenanced a platform for readers to share rebate links, featuring link validity checks, information extraction, and rebate data visualization for user convenience, handling an average of \textbf{2000 daily requests}.}
+          \resumeItem{Technologies Used}
+            {: Spring MVC, Angular 8, Restful API, Bootstrap 4, HTML/CSS, AWS RDS, AWS EC2}
+        \resumeItemListEnd
+
+    \resumeProjectSubheading
+      {Youtube Comments to Images}{Jun 2018 - Jul 2020}
+        \resumeItemListStart
+          \resumeItem{}
+          {Built and provided an application that exports the youtube video comments into canvases. Users can customize the style of the canvas and download all the pictures they want as a zip file for video editors.}
+        \resumeItem{Technologies Used}
+          {: Javascript, Canvas JS, HTML/CSS, Restful API, Bootstrap 4, Oracle}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
