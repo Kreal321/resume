@@ -20,7 +20,7 @@ jobs:
       run:  docker run --rm -t --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" kreal321/latex:amd64 latexmk -outdir=/tmp -f -pdf Kezhen_Xu_Resume.tex
       
     - name: Upload PDF to the workflow tab
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: resume
         path: Kezhen_Xu_Resume.pdf
