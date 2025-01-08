@@ -28,6 +28,9 @@ jobs:
           Kezhen_Xu_Resume.pdf
           Kezhen_Xu_Resume-*.png
 
+    - name: File cleanup
+      run: find . -name "*.fdb_latexmk" -type f -delete && mv -f Kezhen_Xu_Resume-1.png Kezhen_Xu_Resume.png
+
     - name: Publish to GitHub
       uses: mikeal/publish-to-github-action@master
       env:
